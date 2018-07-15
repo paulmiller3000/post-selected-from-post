@@ -1,0 +1,4 @@
+# production
+.htaccess
+/resources/config.ini
+/resources.htaccess

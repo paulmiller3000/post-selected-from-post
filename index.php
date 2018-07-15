@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" media="all" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Post from Post</title>
+    <title>POST from POST</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="margin-top: 3rem;">
             <div class="col-sm">
-                <h1 align="center">POST from POST</h1>
+                <h1 align="center">POST (JS) from POST (PHP)</h1>
             </div>
         </div>
     </div> 
@@ -48,7 +48,7 @@
 
     <div class="container" style="margin-top: 2rem;">
         <div class="row">
-            <div class="col-sm" id="results">               
+            <div class="col-sm">               
                 <?php
                 require_once('./resources/pdo.php');
 

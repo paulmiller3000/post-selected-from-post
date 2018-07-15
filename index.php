@@ -48,7 +48,7 @@
 
     <div class="container" style="margin-top: 2rem;">
         <div class="row">
-            <div class="col-sm" id="results"> <!-- We give the column an ID so JavaScript can grab it later, since the results table isn't in the DOM when the page originally loads -->                
+            <div class="col-sm" id="results">               
                 <?php
                 require_once('./resources/pdo.php');
 

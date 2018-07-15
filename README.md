@@ -1,7 +1,7 @@
 # Post Selected from Post
 This was a real-world problem I recently had to solve. 
 
-Use case: Users would enter a date range and return a series of records from the database to a PHP page. Then, they needed to select one record and post it to an existing PHP page.
+Use case: User enters a string in a search box on a PHP page. On submit, the page queries the database and then posts results to a table on the same page. User then selects a single record with a radio button and needs to post only that record to a different PHP page. The second page does not have access to the database.
 
 Working demo at https://postfrompost.paulmiller3000.com.
 

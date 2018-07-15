@@ -69,7 +69,7 @@
                                     <th class="fit" scope="col">Planet</th>
                                 </tr>
                             </thead>
-                            <tbody id="tbody2">
+                            <tbody id="results-body">
                             <?php while ($r = $stmt->fetch()): ?>                             
                                 <tr>                                    
                                     <?php echo "<td class='fit'><input type='radio' id='cust-" . $r['customer_id'] ."' name='cust-id' value='". $r['customer_id'] . "' </td>"; ?>
@@ -88,18 +88,12 @@
     </div>     
 
     <script>
-        function getSelectedRowData() { 
-            /* JavaScript knows about the container because it was in the DOM when the script was loaded. The table was not, so JavaScript can't refer to it directly by ID . So, get the column's great-grandchild, which is the table body.
+        function getSelectedRowData() {             
+            const tableRowArray = Array.from([document.getElementById('results-body')][0].rows);
 
-            This won't work if the layout changes, so need to refactor */
-            const tableBody = [document.getElementById('results')][0].children[0].children[0].children[1];
-
-            // Convert the HTML element to an array so we can search more efficiently
-            const tableRowArray = Array.from(tableBody.rows);
-
-            var custFirst;
-            var custLast;
-            var custPlanet;
+            let custFirst;
+            let custLast;
+            let custPlanet;
 
             tableRowArray.forEach((tableRow, i) => {                
                 cellButton = tableRow.getElementsByTagName('input');
@@ -141,6 +135,7 @@
 
             document.body.appendChild(hiddenForm);
 
+            // Post
             window.open('', 'view');
             hiddenForm.submit();
         } 

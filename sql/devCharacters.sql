@@ -1,4 +1,4 @@
-USE prmiller_phppostpost;
+USE your_db_name;
 DELIMITER $$
 DROP PROCEDURE IF EXISTS `devCharacters`$$
 

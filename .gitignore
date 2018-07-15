@@ -2,3 +2,4 @@
 .htaccess
 /resources/config.ini
 /resources.htaccess
+/sql/database-load.sql

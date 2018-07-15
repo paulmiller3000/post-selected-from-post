@@ -1,11 +1,16 @@
 # Post Selected from Post
-This was a real-world problem I had to solve. Users would enter a date range and return a series of records from the database to a PHP page. 
+This was a real-world problem I recently had to solve. 
 
-The use case was to then select one record and post it to another PHP page.
+Use case: Users would enter a date range and return a series of records from the database to a PHP page. Then, they needed to select one record and post it to an existing PHP page.
 
-This is a work in progress. As of 7/15/18, it works. I need to refactor the section that gets tableBody, as it's fragile... it'll break if the page layout changes.
+Working demo at https://postfrompost.paulmiller3000.com.
 
-Updates to follow.
+## Getting Started
+Create a new database and user. Be sure to grant your user SELECT and EXECUTE privileges on your database.
+
+Use database-load-sample.sql to load records. 
+
+Execute devCharacters.sql to create the stored procedure.
 
 ## Acknowledgments
 

@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" media="all" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
-    <title>Dev</title>
+    <title>Post from Post</title>
 </head>
 <body>
     <div class="container">
         <div class="row" style="margin-top: 3rem;">
             <div class="col-sm">
-                <h1 align="center">Manager Help Pages</h1>
+                <h1 align="center">POST from POST</h1>
             </div>
         </div>
     </div> 
 
     <div class="container">
         <div class="row" style="margin-top: 1rem;">
+            <div class="col">
+                <p>This was a real-world problem I recently had to solve.</p>
+                <p>Use case: Users would enter a date range and return a series of records from the database to a PHP page. Then, they needed to select one record and post it to an existing PHP page.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row" style="margin-top: 1rem;">
             <div class="col-sm">                         
-                <form action="" method="post" class="col-md-4">                    
+                <form action="" method="post">                    
                     <table class="fit" id="entry">
                         <tr>
-                            <td class="col-md-1 fit"><label for="start">Planet (try <strong>Caprica</strong> or <strong>Picon</strong>): </label></td>                            
+                            <td class="fit"><label for="start">Planet (try <strong>Caprica</strong> or <strong>Picon</strong>): </label></td>                            
                         </tr>
                         <tr>                            
-                            <td class="col-md-1"><input type="test" id="planet" name="planet" required autofocus /></td>
+                            <td class="fit"><input type="test" id="planet" name="planet" required autofocus /></td>
                         </tr>                        
                     </table>                        
                     <input class="btn btn-primary" type="submit" value="Get Characters" />
